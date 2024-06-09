@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h3>Superhero Hunter App</h3>
+        </a>
+        <div class="d-flex">
+          <div class="toogle-container mt-2">
+              <button class="btn btn-secondary" id="themeToggleBtn">Dark Mode</button>
+          </div>
+       </div>
+      </div>
+    </nav>
+
+    <section class="about-sec">
+      <div class="text-center m-5  p-5">
+        <h1>About the Hero</h1>
+      </div>
+      <div
+              class="col-5 mx-auto shadow-lg p-4 mb-4 m-1 bg-body rounded"
+              id="superhero"
+            >
+              <div id="info" class="text-center">
+                <img id="my-img"class="card-img-top" src="">
+                <div id="name"></div>
+                <div id="id"></div>
+                <div id="desc"></div>
+                <div id="comic"></div>
+                <div id="series"></div>
+                <div id="stories"></div>
+                <div id="count"></div>
+                <div id="modified"></div>
+                <div id="status"></div>
+                <div id="total"></div>
+                <div id="limit"></div>
+                <div id="offset"></div>
+                <div id="code"></div>
+                <div class="d-flex justify-content-between mt-3" id="buttons">
+                  <button class="btn btn-dark btn-sm">
+                    <a class="nav-link link-light" href="./index.html">Back</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+    </section>
+    <script src="./js/about.js"></script>
+  </body>
+</html>

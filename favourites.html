@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navigation Menu bar With Title -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h3>Superhero Hunter App</h3>
+        </a>
+        <!-- Favourite Superhero  Button  -->
+        <div class="d-flex">
+          <div class="toogle-container mt-2">
+              <button class="btn btn-secondary" id="themeToggleBtn">Dark Mode</button>
+          </div>
+       </div>
+      </div>
+    </nav>
+    <section class="fav-section">
+      <div class="text-center p-5" id="title">
+        <h1 class="mt-5">Favourite Heroes</h1>
+      </div>
+      <!-- This button will redirect to home page -->
+      <button class="btn btn-dark btn-sm m-3">
+        <a class="nav-link link-light" href="./index.html">Back</a>
+      </button>
+
+      <div class="container-fluid mx-auto align-self-center">
+        <!-- container where superohero will show according to favourites -->
+        <div class="mx-auto justify-content-evenly row" id="superhero-list">
+          <template id="canvas">
+            <div
+              class="col-3 shadow-lg p-4 mb-4 m-1 bg-body rounded"
+              id="superhero"
+            >
+              <!-- basic info -->
+              <div id="info">
+                <img id="my-img"class="card-img-top" src="">
+                <h2 id="name"></h2>
+                </div>
+                <div id="buttons" class="d-flex justify-content-between mt-3">
+                  <!-- Remove from Favourite button -->
+                  <button
+                    class="btn btn-outline-dark btn-sm"
+                    id="fav"
+                   
+                  >
+                  Remove
+                  </button>
+  
+                  <!-- button to display more information of superhero-->
+                  <button class="btn btn-dark btn-md" id="about">
+                   About
+                  </button>
+                </div>
+              </div>
+              <br />
+              <br />
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- script for favourite js -->
+    <script src="./js/favourites.js"></script>
+  </body>
+</html>
